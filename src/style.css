@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url("public/background.png");
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: gray;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav {
+    background-color: #020A21;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.text-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.text-nav__item {
+    list-style: none;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: purple;
+}
+
+
+.logo__image {
+    width: 60px;
+    height: 60px;
+}
+
+section {
+    width: 50%;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.section1 {
+    gap: 50px;
+}
+
+h3 {
+    color: #70336D;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.main {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    margin: 50px 150px;
+}
+
+
+.cometa {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+.explore-button {
+    border: none;
+    width: 200px;
+    height: 60px;
+    background: #3572CB;
+    background: linear-gradient(120deg, rgba(53, 114, 203, 1) 0%, rgba(144, 87, 184, 1) 80%);
+    border-radius: 100px;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.we-do {
+    margin-right: 200px;
+    color: #1a49b8;
+    font-size: 20px;
+}
+
+.eath {
+    margin-left: 100px;
+    width: 500px;
+    height: 500px;
+    animation: spin 5s linear infinite;
+}
+
+.reserch {
+    width: 300px;
+    background: linear-gradient(120deg, rgb(53, 203, 140) 0%, rgb(42, 57, 189) 80%);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    /* обертання займає 70% часу */
+    100% {
+        transform: rotate(360deg);
+    }
+    /* останні 30% — пауза */
+}

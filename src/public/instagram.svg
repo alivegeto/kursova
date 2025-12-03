@@ -1,0 +1,26 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="neon-glow-ig-v2" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur"/>
+            <feColorMatrix in="blur" type="matrix" values="
+                0 1 1 0 0
+                0 0 1 0 0
+                0 0 1 0 0
+                0 0 0 18 -7
+            " result="glow"/>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"/>
+                <feMergeNode in="glow"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <path
+            d="M17 2H7C4.24 2 2 4.24 2 7V17C2 19.76 4.24 22 7 22H17C19.76 22 22 19.76 22 17V7C22 4.24 19.76 2 17 2ZM12 15.6C14 15.6 15.6 14 15.6 12C15.6 10 14 8.4 12 8.4C10 8.4 8.4 10 8.4 12C8.4 14 10 15.6 12 15.6Z"
+            stroke="#00FFFF"
+            stroke-width="1.5"
+            filter="url(#neon-glow-ig-v2)"
+    />
+    <circle cx="12" cy="12" r="3.6" stroke="#00FFFF" stroke-width="1.5" filter="url(#neon-glow-ig-v2)"/>
+    <circle cx="17.5" cy="6.5" r="0.8" fill="#00FFFF" filter="url(#neon-glow-ig-v2)"/>
+</svg>

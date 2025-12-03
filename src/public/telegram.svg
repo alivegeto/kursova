@@ -1,0 +1,23 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="neon-glow-tg" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur"/>
+            <feColorMatrix in="blur" type="matrix" values="
+                0 1 1 0 0
+                0 0 1 0 0
+                0 0 1 0 0
+                0 0 0 18 -7
+            " result="glow"/>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"/>
+                <feMergeNode in="glow"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <path
+            d="M20 3L3 10L6.7 12.3L15 7.5L9.6 13.5L13.3 15.7L20 3ZM10.5 14L8.7 19.7L10.5 17L14.4 18.5L10.5 14Z"
+            fill="#00FFFF"
+            filter="url(#neon-glow-tg)"
+    />
+</svg>
